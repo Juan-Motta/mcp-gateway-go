@@ -1,0 +1,23 @@
+
+# Reconstructable agent and workflow configuration
+/.atl/
+/.agents/
+/.claude/
+/.codex/
+/.codeforge/
+/.codegraph/
+
+# Local state — do not commit
+.DS_Store
+.superpowers/sdd/
+.worktrees/
+
+# Go
+bin/
+*.test
+coverage.out
+
+# JavaScript
+node_modules/
+.next/
+next-env.d.ts

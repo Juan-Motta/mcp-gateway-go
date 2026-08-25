@@ -1,0 +1,70 @@
+schema: spec-driven
+
+context: |
+  Project: mcp-gateway-go
+  Status: Repository scaffold; application stack and architecture are not established.
+  Source: No module manifest, application source, build scripts, or CI workflows were detected.
+  License: MIT.
+  Style: No project code conventions are currently detectable.
+
+strict_tdd: false
+
+testing:
+  detected: "2026-08-25"
+  strict_tdd: false
+  test_runner:
+    available: false
+    framework: ""
+    command: ""
+  layers:
+    unit:
+      available: false
+      tool: ""
+    integration:
+      available: false
+      tool: ""
+    e2e:
+      available: false
+      tool: ""
+  coverage:
+    available: false
+    command: ""
+  quality:
+    linter:
+      available: false
+      command: ""
+    type_checker:
+      available: false
+      command: ""
+    formatter:
+      available: false
+      command: ""
+  ci:
+    available: false
+    provider: ""
+
+rules:
+  proposal:
+    - Include a rollback plan for risky changes.
+    - Do not infer product requirements from the repository scaffold.
+  specs:
+    - Use Given/When/Then for scenarios.
+    - Use RFC 2119 keywords for normative requirements.
+  design:
+    - Document architecture decisions and their rationale.
+    - Include sequence diagrams for complex flows.
+  tasks:
+    - Group tasks by phase and use hierarchical numbering.
+    - Keep each task completable in one focused session.
+  apply:
+    guidelines:
+      - Follow established project patterns when they exist.
+      - Add testing and quality tooling before enabling Strict TDD.
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive specification deltas.
